@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>1Office – Nền tảng Vận hành Doanh nghiệp Dịch vụ B2B</title>
+<meta content="1Office giúp doanh nghiệp dịch vụ B2B kiểm soát tiến độ, workload và lợi nhuận dự án trên một nguồn dữ liệu tập trung. Kết nối CRM, Dự án, Nhân sự và Báo cáo điều hành." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://1office.vn/" property="og:url"/>
+<meta content="1Office – Nền tảng Vận hành Doanh nghiệp Dịch vụ B2B" property="og:title"/>
+<meta content="Kiểm soát tiến độ, workload và lợi nhuận dự án trên một nguồn dữ liệu tập trung. 6.000+ doanh nghiệp tin dùng." property="og:description"/>
+<meta content="https://1office.vn/og-image.jpg" property="og:image"/>
+<meta content="vi_VN" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="1Office – Nền tảng Vận hành Doanh nghiệp Dịch vụ B2B" name="twitter:title"/>
+<meta content="Kiểm soát tiến độ, workload và lợi nhuận dự án trên một nguồn dữ liệu tập trung." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+
+
+
+
+
+
+<link href="assets/css/style.css" rel="stylesheet"/></head>
+<body><!-- PATCH-V6: image popup restyled like demo form modal -->
+<!-- PATCH-V6: product claims softened and go-live pricing claims removed -->
+<!-- NAVBAR -->
+<nav id="nav">
+<div class="nav-in">
+<a class="nav-logo" href="#hero"><img alt="1Office" height="50" src="assets/images/image_01.png" width="150"/></a>
+<div class="nav-links">
+<a href="#pain">Vấn đề vận hành</a>
+<a href="#solution">Giải pháp theo ngành</a>
+<a href="#flow">Workflow</a>
+<a href="#roles">Vai trò</a>
+<a href="#faq">FAQ</a>
+</div>
+<div class="nav-cta">
+<a class="btn-p" href="javascript:void(0)" onclick="openDemo()">Đăng ký Demo</a>
+</div>
+<div aria-label="Menu" class="hbg" onclick="tgMenu()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+<div class="mmenu" id="mm">
+<a href="#pain" onclick="tgMenu()">Vấn đề vận hành</a>
+<a href="#solution" onclick="tgMenu()">Giải pháp theo ngành</a>
+<a href="#flow" onclick="tgMenu()">Workflow</a>
+<a href="#roles" onclick="tgMenu()">Vai trò</a>
+<a href="#faq" onclick="tgMenu()">FAQ</a>
+<div style="font-size:.9rem;color:var(--gray-600)">Hotline: <a href="tel:0834838888" style="color:var(--orange);font-weight:700">083 483 8888</a></div>
+<a class="btn-p" href="javascript:void(0)" onclick="tgMenu();openDemo()">Đăng ký Demo miễn phí</a>
+</div>
+<!-- HERO -->
+<section id="hero">
+<!-- TOP: Headline + subtitle centered full-width -->
+<div class="hero-top fi">
+<div class="hero-industry-badge">
+<span class="hb-dot"></span>
+<span class="hb-ind active" onclick="switchBadge(0,this)">Agency</span>
+<span class="hb-sep">·</span>
+<span class="hb-ind" onclick="switchBadge(1,this)">Dịch vụ IT</span>
+<span class="hb-sep">·</span>
+<span class="hb-ind" onclick="switchBadge(2,this)">Tư vấn</span>
+</div>
+<h1 class="hero-h1">Kiểm soát tiến độ, workload và lợi nhuận dự án<br/><em>trên một nguồn dữ liệu tập trung</em></h1>
+<p class="hero-sub">1Office giúp doanh nghiệp kết nối CRM, Dự án, Nhân sự và Báo cáo điều hành trên cùng một hệ thống.</p>
+</div>
+<!-- BOTTOM: Left content + Right form -->
+<div class="hero-g">
+<div class="hero-left fi" style="animation-delay:.05s">
+<div class="hero-checks">
+<div class="hero-check"><svg fill="none" height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#FFF0EB" r="7.5"></circle><path d="M4.5 7.5l2.5 2.5 4-4" stroke="#F0500A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Theo dõi tiến độ &amp; workload từng dự án theo thời gian thực</span></div>
+<div class="hero-check"><svg fill="none" height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#FFF0EB" r="7.5"></circle><path d="M4.5 7.5l2.5 2.5 4-4" stroke="#F0500A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>CRM → Dự án → Timesheet → KPI tự liên thông - giảm nhập liệu trùng và sai lệch số liệu</span></div>
+<div class="hero-check"><svg fill="none" height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#FFF0EB" r="7.5"></circle><path d="M4.5 7.5l2.5 2.5 4-4" stroke="#F0500A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Cảnh báo sớm quá tải, trễ deadline, lệch quy trình - trước khi thất thoát xảy ra</span></div>
+</div>
+<div class="hero-product-wrap">
+<img alt="Giao diện thực tế 1Office" class="hero-product-img" src="assets/images/image_02.png"/>
+<div class="hero-stats">
+<div class="hero-stat"><b class="hero-stat-v count-up" data-sep="." data-suffix="+" data-target="6000">0</b><span class="hero-stat-l">Doanh nghiệp tin dùng</span></div>
+<div class="hero-stat"><b class="hero-stat-v count-up" data-suffix="K+" data-target="500">0</b><span class="hero-stat-l">Người dùng</span></div>
+<div class="hero-stat"><b class="hero-stat-v count-up" data-suffix="K+" data-target="94">0</b><span class="hero-stat-l">Dự án đang quản lý</span></div>
+<a class="hero-stat hero-stat-cta" href="#flow">
+<span style="display:inline-flex;align-items:center;gap:6px;color:var(--orange);font-size:.92rem;font-weight:700;white-space:nowrap">Xem cách 1Office vận hành <span>→</span></span>
+</a>
+</div>
+</div>
+</div>
+<div class="hero-vis fi" style="animation-delay:.1s">
+<div class="form-card" style="color-scheme:light">
+<div class="form-t">Đăng ký Demo 1:1 miễn phí</div>
+<div class="form-s">Tư vấn theo bài toán quản trị thực tế · Phù hợp với doanh nghiệp trên 50 nhân sự</div>
+<form autocomplete="off" id="hf" novalidate="" style="color-scheme:light;background:transparent">
+<div class="form-row">
+<div class="fg" id="hfg-company"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Tên công ty *</label><input id="hf-company" placeholder="Công ty TNHH..." type="text"/><div class="em">Vui lòng nhập tên công ty</div></div>
+<div class="fg" id="hfg-name"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Họ và tên *</label><input id="hf-name" placeholder="Nguyễn Văn A" type="text"/><div class="em">Vui lòng nhập họ tên</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="hfg-email"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Email *</label><input id="hf-email" placeholder="ten@congty.com" type="email"/><div class="em">Email không hợp lệ</div></div>
+<div class="fg" id="hfg-phone"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Số điện thoại *</label><input id="hf-phone" placeholder="09xx xxx xxx" type="tel"/><div class="em">Số điện thoại không hợp lệ</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="hfg-title"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Chức vụ *</label>
+<select id="hf-title"><option value="">-- Chọn chức vụ --</option><option>Lãnh đạo (Chủ tịch, CEO, Giám đốc cấp cao)</option><option>Quản lý nhân sự</option><option>Quản lý cấp trung / Ops</option><option>Quản lý CNTT (công nghệ thông tin)</option><option>Nhân viên</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn chức vụ</div></div>
+<div class="fg" id="hfg-region"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Khu vực *</label>
+<select id="hf-region"><option value="">-- Chọn khu vực --</option><option>Hà Nội</option><option>Hồ Chí Minh</option><option>Khu vực phía Bắc (tính đến Huế)</option><option>Khu vực phía Nam (tính từ Đà Nẵng)</option></select>
+<div class="em">Vui lòng chọn khu vực</div></div>
+</div>
+<div class="form-row"><div class="fg" id="hfg-size"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Quy mô nhân sự *</label>
+<select id="hf-size"><option value="">-- Chọn quy mô --</option><option>Dưới 20 nhân viên</option><option>20 - 50 nhân viên</option><option>50 - 100 nhân viên</option><option>100 - 300 nhân viên</option><option>300 - 500 nhân viên</option><option>500 - 1000 nhân viên</option><option>Trên 1000 nhân viên</option></select>
+<div class="em">Vui lòng chọn quy mô</div></div><div class="fg" id="hfg-industry"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Ngành hoạt động *</label>
+<select id="hf-industry"><option value="">-- Chọn ngành --</option><option>Thương mại / Dịch vụ B2B</option><option>Thiết kế / Thi công</option><option>Chuỗi (F&amp;B / Bán lẻ)</option><option>Sản xuất / Nhà máy</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn ngành</div></div></div>
+<div class="fg" id="hfg-problem"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Bài toán đang gặp phải *</label> <select id="hf-problem"><option value="">-- Chọn bài toán --</option><option>Chấm công lương, quản lý nhân sự và đơn từ thủ công</option><option>Giao việc phân tán, khó theo dõi tiến độ và kiểm soát công việc/dự án</option><option>Thiếu hệ thống báo cáo và đánh giá công việc hiệu quả</option><option>Quy trình nội bộ và phê duyệt thủ công, chưa được số hóa</option><option>Quản lý chu trình bán hàng và khách hàng rời rạc</option><option>Khác</option></select> <div class="em">Vui lòng chọn bài toán</div></div>
+<button class="form-sub-btn" onclick="openDemo()" type="button">Đăng ký Demo miễn phí ngay</button>
+</form>
+<div class="form-ok" id="hform-ok" style="display:none">
+<div class="form-ok-ic">🎉</div>
+<div class="form-ok-t">Đăng ký thành công!</div>
+<div class="form-ok-d">Chuyên gia 1Office sẽ liên hệ trong vòng <strong>24 giờ làm việc</strong>. Hotline: <a href="tel:0834838888" style="color:var(--orange);font-weight:700">083 483 8888</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="pain" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Bài toán điển hình</div>
+<h2 class="h2">Doanh nghiệp dịch vụ không thiếu công cụ.<br><span class="hi">Vấn đề là dữ liệu đang nằm rải rác ở 4–5 nơi.</span></br></h2>
+<p class="sub" style="margin:0 auto">Khi báo cáo đến từ nhiều file, nhiều team, nhiều thời điểm - CEO khó có một con số đáng tin để điều hành kịp thời.</p>
+<div class="pain-chip-row">
+<span>Lark</span><span>Jira</span><span>Notion</span><span>Slack</span><span>Google Sheets</span><span>Excel</span>
+</div>
+</div>
+<div class="v3-pain-grid">
+<div class="v3-pain-cards">
+<div class="v3-pain-card fi sl">
+<div class="role">CEO / Founder</div>
+<h3>Nhiều báo cáo, nhưng không có một nguồn dữ liệu đồng bộ, đáng tin</h3>
+<p>Báo cáo đến từ 5 file, 5 team, 5 thời điểm. Đến khi tổng hợp xong, vấn đề đã xảy ra - lãnh đạo vẫn phải hỏi lại từng bộ phận để kiểm chứng.</p>
+</div>
+<div class="v3-pain-card fi sl">
+<div class="role">COO / Quản lý vận hành</div>
+<h3>Quy trình bị chia nhỏ trên quá nhiều công cụ</h3>
+<p>Task ở Jira, tài liệu ở Notion, trao đổi ở Lark, báo cáo ở Sheets. Mỗi lần kiểm tra tiến độ là một lần ghép dữ liệu thủ công từ 4-5 nơi.</p>
+</div>
+<div class="v3-pain-card fi sl">
+<div class="role">HR / Quản lý nhân sự</div>
+<h3>Chấm công, KPI (chỉ số hiệu suất), lương - đối soát thủ công</h3>
+<p>Công việc ở một nơi, chấm công ở một nơi, KPI ở một file khác. Mỗi kỳ lương lại đối chiếu thủ công - tốn thời gian mà vẫn dễ sai lệch.</p>
+</div>
+</div>
+<div class="v3-pain-darkcard fi sr">
+<div class="eyebrow">Nguồn dữ liệu rời rạc</div>
+<h3>Nhiều nguồn data <span>→</span> số liệu không khớp</h3>
+<div class="v3-pain-sources">
+<div class="v3-pain-source"><div class="top">📄 Sheets</div><div class="sub">Doanh thu Q2, chi phí dự án, file tổng hợp cuối kỳ</div></div>
+<div class="v3-pain-source"><div class="top">🧩 Jira</div><div class="sub">Task &amp; Sprint, tiến độ xử lý, backlog theo team</div></div>
+<div class="v3-pain-source"><div class="top">📝 Notion</div><div class="sub">Tài liệu dự án, biên bản, checklist &amp; quy trình</div></div>
+<div class="v3-pain-source"><div class="top">💬 Lark / Email</div><div class="sub">Trao đổi &amp; phê duyệt phân tán, khó truy vết lịch sử</div></div>
+</div>
+<div class="v3-pain-alert" style="margin-top:18px">⚠ Số liệu không khớp nhau - không có một nguồn dữ liệu chung để tin</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BUSINESS-PROCESS FLOW DIAGRAM -->
+
+<section id="before-after" style="scroll-margin-top:80px;background:#fff">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Trước &amp; Sau</div>
+<h2 class="h2">Một quyết định có thể thay đổi cách doanh nghiệp <span class="hi">vận hành mỗi ngày</span></h2>
+</div>
+<div class="ba2-wrap fi">
+<div class="ba2-col ba2-before">
+<div class="ba2-header">
+<span class="ba2-badge bad">✕ Trước đây</span>
+<span class="ba2-sub">Vận hành thủ công, dữ liệu rời rạc</span>
+</div>
+<ul class="ba2-list">
+<li><span class="ba2-x">✕</span>Công việc rời rạc, không có quy trình chuẩn</li>
+<li><span class="ba2-x">✕</span>Các phòng ban thiếu kết nối, trách nhiệm không rõ ràng</li>
+<li><span class="ba2-x">✕</span>Hồ sơ thất lạc, không rõ đang ở bước nào, do ai phụ trách</li>
+<li><span class="ba2-x">✕</span>Phê duyệt thủ công, phải hỏi nhiều nơi khi khách hàng/đối tác cần phản hồi</li>
+<li><span class="ba2-x">✕</span>Lãng phí tài nguyên cho việc hành chính lặp lại</li>
+</ul>
+</div>
+<div class="ba2-divider"><span>SO VỚI</span></div>
+<div class="ba2-col ba2-after">
+<div class="ba2-header">
+<span class="ba2-badge good">✓ Với 1Office</span>
+<span class="ba2-sub">Vận hành liền mạch, tự động</span>
+</div>
+<ul class="ba2-list">
+<li><span class="ba2-ck">✓</span>Chuẩn hóa quy trình, phòng ban phối hợp nhịp nhàng</li>
+<li><span class="ba2-ck">✓</span>Dữ liệu tập trung, trách nhiệm rõ ràng từng bước</li>
+<li><span class="ba2-ck">✓</span>Theo dõi real-time, biết ngay việc nào trễ, ai đang phụ trách</li>
+<li><span class="ba2-ck">✓</span>Ký số tập trung, xem được lịch sử phê duyệt ngay trên điện thoại</li>
+<li><span class="ba2-ck">✓</span>Tự động hóa tác vụ thủ công, giải phóng thời gian cho đội ngũ</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="flow" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Toàn cảnh vận hành</div>
+<h2 class="h2">Một luồng dữ liệu liên thông<br/></h2>
+<p class="sub" style="margin:0 auto">Từ chốt hợp đồng, triển khai dự án đến tính lương - dữ liệu chảy xuyên suốt trên một nền tảng, giúp các phòng ban dùng chung một nguồn và lãnh đạo theo dõi real-time.</p>
+</div>
+<div class="v3-flow-rail">
+<div class="v3-flow-node fi"><div class="v3-flow-step">01</div><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h3>Sales / Kinh doanh</h3><div class="mod">1CRM</div><p class="desc">Theo dõi pipeline, chốt hợp đồng và ký số trực tiếp trên hệ thống</p><div class="v3-flow-thumb"><img alt="1CRM - Ký số &amp; Pipeline" src="assets/images/image_03.webp" style="width:100%;height:auto;display:block"/></div></div>
+<div class="v3-flow-node fi"><div class="v3-flow-step">02</div><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><rect height="4" rx="1" width="8" x="8" y="2"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg></div><h3>Triển khai dự án</h3><div class="mod">1Work</div><p class="desc">Giao việc, phối hợp, chấm công và theo dõi workload real-time</p><div class="v3-flow-thumb"><img alt="1Work - Gantt triển khai" src="assets/images/image_04.png" style="width:100%;height:auto;display:block"/></div></div>
+<div class="v3-flow-node fi"><div class="v3-flow-step">03</div><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-6"></path></svg></div><h3>Tiến độ</h3><div class="mod">Workload</div><p class="desc">Cảnh báo quá tải, trễ hạn, lệch quy trình</p><div class="v3-flow-thumb"><img alt="Workload - Tiến độ từng người" src="assets/images/image_05.png" style="width:100%;height:auto;display:block"/></div></div>
+<div class="v3-flow-node fi"><div class="v3-flow-step">04</div><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle><path d="m17 11 2 2 4-4"></path></svg></div><h3>Nhân sự &amp; Lương</h3><div class="mod">1HRM</div><p class="desc">KPI, chấm công, timesheet và lương liên thông</p><div class="v3-flow-thumb"><img alt="1HRM - Dashboard nhân sự &amp; lương" src="assets/images/image_06.svg" style="width:100%;height:auto;display:block"/></div></div>
+<div class="v3-flow-node fi"><div class="v3-flow-step">05</div><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"></path></svg></div><h3>Điều hành</h3><div class="mod">1AI</div><p class="desc">Dashboard tổng quan và cảnh báo sớm cho CEO</p><div class="v3-flow-thumb"><img alt="1AI - Dashboard tổng quan CEO" src="assets/images/image_07.svg" style="width:100%;height:auto;display:block"/></div></div>
+</div>
+<div class="v3-flow-benefits fi"><span>Nhìn rõ biên lợi nhuận từng dự án</span><span>Không còn nhập liệu trùng</span><span>Ra quyết định từ dữ liệu thực</span></div>
+</div>
+</section>
+
+<!-- SOLUTION TABS -->
+<section id="solution" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Giải pháp theo ngành</div>
+<h2 class="h2">1Office thích ứng với<br/><span class="hi">từng mô hình doanh nghiệp dịch vụ</span></h2>
+<p class="sub" style="margin:0 auto">Agency chạy theo chiến dịch, Dịch vụ IT (công nghệ thông tin) chạy theo sprint, Tư vấn tính theo giờ - 1Office hỗ trợ từng mô hình vận hành mà không cần tách rời dữ liệu.</p>
+</div>
+<div class="v3-sol-grid">
+<div class="v3-sol-card fi"><div class="v3-sol-thumb"><img alt="Agency - CRM Kanban" src="assets/images/image_08.png" style="width:100%;height:auto;display:block"/></div><div class="v3-sol-body">
+<div class="v3-sol-head"><h3>Agency &amp; Sáng tạo</h3><span class="tag" style="margin:0">01</span></div>
+<p class="v3-sol-hook">“Ai đang làm gì, cho khách hàng nào, mất bao nhiêu giờ - và dự án còn lãi không?”</p>
+<p class="v3-sol-sub">Kiểm soát workload, thời gian thực hiện và chi phí nhân sự - giảm overrun dự án.</p>
+<div class="v3-sol-tags"><span>1CRM</span><span>1Work</span><span>Chấm giờ</span><span>BPA</span></div>
+<ul class="v3-sol-list">
+<li>Lead → CRM → dự án, không nhập liệu nhiều lần.</li>
+<li>Workload từng người sáng tạo, cảnh báo tự động - phân công đúng người đúng lúc.</li>
+<li>Chấm giờ → chi phí dự án tổng hợp tự động. Duyệt nội dung qua quy trình số.</li>
+</ul>
+</div></div><div class="v3-sol-card fi"><div class="v3-sol-thumb"><img alt="IT Service - Kanban dự án phần mềm" src="assets/images/image_09.png" style="width:100%;height:auto;display:block"/></div><div class="v3-sol-body">
+<div class="v3-sol-head"><h3>Dịch vụ IT &amp; Phần mềm</h3><span class="tag" style="margin:0">02</span></div>
+<p class="v3-sol-hook">“Team vẫn chạy sprint, nhưng kỹ sư nào đang quá tải?”</p>
+<p class="v3-sol-sub">Workload minh bạch, phát hiện overload trước khi ảnh hưởng tiến độ và cam kết với khách hàng.</p>
+<div class="v3-sol-tags"><span>1CRM</span><span>Sprint</span><span>Timesheet</span><span>1HRM KPI</span></div>
+<ul class="v3-sol-list">
+<li>Hợp đồng dịch vụ → kế hoạch triển khai/sprint được chuẩn hóa trên 1Work.</li>
+<li>Scope change được đưa vào quy trình duyệt và báo giá bổ sung, giảm tình trạng làm thêm nhưng không ghi nhận doanh thu.</li>
+<li>KPI đội dự án có thể liên kết dữ liệu công việc/chấm công để hỗ trợ tính lương.</li>
+</ul>
+</div></div><div class="v3-sol-card fi"><div class="v3-sol-thumb"><img alt="Tư vấn - Chi tiết dự án &amp; lịch sử" src="assets/images/image_10.png" style="width:100%;height:auto;display:block"/></div><div class="v3-sol-body">
+<div class="v3-sol-head"><h3>Tư vấn &amp; Đào tạo</h3><span class="tag" style="margin:0">03</span></div>
+<p class="v3-sol-hook">“Ba công cụ, ba nguồn dữ liệu - cuối tháng vẫn phải đối soát giờ tư vấn, doanh thu và chi phí?”</p>
+<p class="v3-sol-sub">Chuẩn hóa giờ công, phê duyệt tài liệu và bàn giao kết quả - giảm phụ thuộc vào xử lý thủ công.</p>
+<div class="v3-sol-tags"><span>1CRM</span><span>1Work</span><span>BPA + Ký số</span><span>1HRM</span></div>
+<ul class="v3-sol-list">
+<li>Hợp đồng retainer &amp; trọn gói tập trung trên 1CRM. Ghi giờ chuyên gia → tỷ lệ sử dụng tự động.</li>
+<li>Duyệt &amp; bàn giao tài liệu số hóa, lưu lịch sử phiên bản đầy đủ.</li>
+<li>Hợp đồng lao động ký số, cảnh báo hết hạn. Thu tiền đúng hạn, vận hành gọn hơn.</li>
+</ul>
+</div>
+</div>
+</div></div>
+
+<div style="text-align:center;margin-top:32px;width:100%;display:flex;justify-content:center">
+<a class="btn-p" href="javascript:void(0)" onclick="openDemo()">Nhận tư vấn theo mô hình vận hành của bạn →</a>
+</div>
+</section>
+<!-- LIFECYCLE -->
+<!-- AI -->
+<section id="ai" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Nền tảng AI (trí tuệ nhân tạo) · 8 Trợ lý AI</div>
+<h2 class="h2">8 Trợ lý AI hỗ trợ ra quyết định trên<br/><span class="hi">dữ liệu vận hành thực tế</span></h2>
+<p class="sub" style="margin:0 auto">Không phải demo - 1AI hỗ trợ phân tích dự án, nhân sự và quy trình dựa trên dữ liệu thực. Chủ động cảnh báo và gợi ý hành động phù hợp.</p>
+</div>
+<div class="v3-ai-grid">
+<div class="v3-ai-card fi" style="animation-delay:0.00s">
+<div class="v3-ai-badge" style="background:#FFFBEB;color:#D97706">1AI Dashboard</div>
+<div class="v3-ai-media"><img alt="1AI Dashboard - Tạo báo cáo thông minh" src="assets/images/image_11.png" style="width:100%;height:auto;display:block"/></div>
+<p>Tự động tổng hợp dữ liệu từ nhiều phân hệ, đọc - phân tích - tóm tắt báo cáo cho CEO. Cảnh báo điểm bất thường và gợi ý hành động then chốt.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.08s">
+<div class="v3-ai-badge" style="background:#EFF6FF;color:#0E7AC4">1AI Assistant</div>
+<div class="v3-ai-media"><img alt="1AI Assistant - Trợ lý hỏi đáp" src="assets/images/image_12.png" style="width:100%;height:auto;display:block"/></div>
+<p>Trợ lý 24/7: hỏi đáp dữ liệu theo phân quyền, tra cứu tài liệu nội bộ và trực quan hóa số liệu bằng biểu đồ.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.16s">
+<div class="v3-ai-badge" style="background:#ECFDF5;color:#059669">1AI Process</div>
+<div class="v3-ai-media"><img alt="1AI Process - Quy trình tự động" src="assets/images/image_13.png" style="width:100%;height:auto;display:block"/></div>
+<p>Mô tả quy trình bằng hội thoại - AI dựng sơ đồ BPA (tự động hóa quy trình) hoàn chỉnh và gợi ý điểm nghẽn cần tối ưu.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.24s">
+<div class="v3-ai-badge" style="background:#F5F3FF;color:#7C3AED">1AI Meeting</div>
+<div class="v3-ai-media"><img alt="1AI Meeting - Biên bản cuộc họp" src="assets/images/image_14.png" style="width:100%;height:auto;display:block"/></div>
+<p>Ghi âm họp - tự tạo đầu việc, lịch biểu và biên bản. Giải quyết tình trạng "họp xong để đấy".</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.32s">
+<div class="v3-ai-badge" style="background:#FFF2ED;color:#F0500A">1AI Monitor</div>
+<div class="v3-ai-media"><img alt="1AI Monitor - Giám sát hợp đồng" src="assets/images/image_15.png" style="width:100%;height:auto;display:block"/></div>
+<p>Giám sát 24/7 theo quy định nội bộ. Cảnh báo bất thường và đề xuất cách xử lý ngay cho lãnh đạo.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.40s">
+<div class="v3-ai-badge" style="background:#EFF6FF;color:#0E7AC4">1AI Salary</div>
+<div class="v3-ai-media"><img alt="1AI Salary - Tự động tính lương" src="assets/images/image_16.png" style="width:100%;height:auto;display:block"/></div>
+<p>Bảng lương được tổng hợp từ dữ liệu chấm công, timesheet và KPI - phát hiện sai lệch trước kỳ.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.48s">
+<div class="v3-ai-badge" style="background:#FFFBEB;color:#D97706">1AI Performance</div>
+<div class="v3-ai-media"><img alt="1AI Performance - Đánh giá hiệu suất" src="assets/images/image_17.png" style="width:100%;height:auto;display:block"/></div>
+<p>Phân tích hiệu suất từ KPI, OKR (mục tiêu &amp; kết quả then chốt), timesheet; hỗ trợ lãnh đạo đánh giá và ra quyết định nhân sự.</p>
+</div>
+<div class="v3-ai-card fi" style="animation-delay:0.56s">
+<div class="v3-ai-badge" style="background:#ECFDF5;color:#059669">1AI Talent</div>
+<div class="v3-ai-media"><img alt="1AI Talent - Tuyển dụng thông minh" src="assets/images/image_18.png" style="width:100%;height:auto;display:block"/></div>
+<p>Scan CV (hồ sơ ứng viên), chấm điểm, shortlist tự động; hỗ trợ tạo JD (bản mô tả công việc) và lịch phỏng vấn. Tuyển đúng người, đúng lúc.</p>
+</div>
+</div>
+</div>
+
+</section>
+<!-- FEATURES -->
+<!-- WHY -->
+<!-- ROLES -->
+<section id="roles" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Theo vai trò</div>
+<h2 class="h2">Đúng người - đúng dữ liệu -<br/><span class="hi">đúng quyết định</span></h2>
+<p class="sub" style="margin:0 auto">Không còn cảnh mỗi phòng ban làm việc trong một "vùng mù" dữ liệu. Tất cả dùng chung một nguồn, nhưng mỗi vai trò nhìn thấy đúng thông tin cần để ra quyết định.</p>
+</div>
+<div class="v3-roles-grid"><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 12h18"></path></svg></div><div><h3>CEO / Chủ doanh nghiệp</h3><div class="sub">Dashboard toàn cảnh real-time, cảnh báo chủ động</div></div></div><ul class="v3-role-list"><li>Dashboard điều hành tổng hợp - không cần hỏi từng team để xác nhận số liệu.</li><li>Cảnh báo chủ động trước khi vấn đề xảy ra.</li><li>Dự báo doanh thu, tiến độ triển khai và rủi ro ảnh hưởng lợi nhuận.</li></ul></div><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.67 0 1.24.26 1.67.68.42.43.68 1 .68 1.67s-.26 1.24-.68 1.67c-.43.42-1 .68-1.67.68-.65 0-1.25.39-1.51 1z"></path></svg></div><div><h3>COO / Giám đốc vận hành</h3><div class="sub">Kiểm soát công việc realtime, quy trình chuẩn hóa</div></div></div><ul class="v3-role-list"><li>Workload từng đội, từng người theo thời gian thực.</li><li>Quy trình phê duyệt số hóa hoàn toàn.</li><li>Báo cáo vận hành tự động theo ngày/tuần, giảm thời gian tổng hợp thủ công.</li></ul></div><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M2 12h2"></path><path d="M20 12h2"></path></svg></div><div><h3>Quản lý dự án / PM</h3><div class="sub">Tiến độ &amp; ngân sách minh bạch theo từng ngày</div></div></div><ul class="v3-role-list"><li>Gantt / Kanban / Sprint linh hoạt theo phương pháp.</li><li>Cảnh báo quá tải tự động trước khi ảnh hưởng tiến độ.</li><li>Scope change có quy trình duyệt và ghi nhận chi phí - giảm tình trạng làm thêm miễn phí.</li></ul></div><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle><path d="m17 11 2 2 4-4"></path></svg></div><div><h3>Trưởng phòng Nhân sự / HR</h3><div class="sub">Lương tự động, 1 lần bấm duyệt - đúng từng đồng</div></div></div><ul class="v3-role-list"><li>Chấm công đa hình thức (WiFi, Face ID (nhận diện khuôn mặt), Thẻ từ, GPS (định vị)).</li><li>KPI/OKR, chấm công và lương liên thông trên cùng dữ liệu.</li><li>Ký số hợp đồng lao động, cảnh báo hết hạn tự động.</li></ul></div><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div><h3>Account / Sales</h3><div class="sub">Luồng cơ hội rõ ràng, nhắc việc tự động</div></div></div><ul class="v3-role-list"><li>Pipeline đầy đủ từ lead đến hợp đồng ký số.</li><li>Hoa hồng, công nợ và trạng thái hợp đồng được theo dõi real-time.</li><li>Dự án tự sinh khi ký hợp đồng - không nhập lại.</li></ul></div><div class="v3-role-card fi"><div class="v3-role-top"><div class="v3-ico"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"></path></svg></div><div><h3>CTO / Trưởng nhóm kỹ thuật</h3><div class="sub">Bổ sung đúng phần công cụ cũ còn thiếu</div></div></div><ul class="v3-role-list"><li>API (giao diện lập trình ứng dụng) mở giúp kết nối với công cụ kỹ thuật đang dùng, không cần thay toàn bộ hệ thống ngay lập tức.</li><li>Thêm góc nhìn lãi lỗ dự án, nhân sự &amp; kinh doanh trên cùng dữ liệu.</li><li>Đăng nhập một lần (SSO Google / Microsoft).</li></ul></div></div>
+</div>
+</section>
+<!-- SOCIAL PROOF -->
+<section id="proof" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Được tin dùng</div>
+<h2 class="h2">Hơn <span class="hi">6.000+</span> doanh nghiệp Việt<br/>đang vận hành hiệu quả hơn với 1Office</h2>
+<p class="sub" style="margin:14px auto 0">Từ agency, công ty phần mềm đến đơn vị tư vấn, 1Office giúp kết nối dự án, dữ liệu vận hành và nhân sự trên cùng một nền tảng.</p>
+<div class="v3-proof-award">🏆 Giải Ba Nhân Tài Đất Việt 2022</div>
+</div>
+
+<div class="usp-grid fi">
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div class="usp-lbl">Hồ sơ nhân sự</div><div class="usp-num count-up" data-sep="." data-target="154546">154.546</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 12h6"></path><path d="M9 16h6"></path></svg></div><div class="usp-lbl">Đơn từ</div><div class="usp-num count-up" data-sep="." data-target="2074675">2.074.675</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="13" rx="2" width="19" x="2.5" y="7"></rect><path d="M16 7V5.2A2.2 2.2 0 0 0 13.8 3h-3.6A2.2 2.2 0 0 0 8 5.2V7"></path><path d="M2.5 12h19"></path></svg></div><div class="usp-lbl">Công việc</div><div class="usp-num count-up" data-sep="." data-target="2183319">2.183.319</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="6" rx="1.5" width="6" x="3" y="3.5"></rect><rect height="6" rx="1.5" width="6" x="15" y="14.5"></rect><path d="M9 6.5h4a2 2 0 0 1 2 2v6"></path><path d="m13 12.5 2 2 2-2"></path></svg></div><div class="usp-lbl">Qui trình</div><div class="usp-num count-up" data-sep="." data-target="308798">308.798</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M3 4h18"></path><path d="M4 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4"></path><path d="m8 20 2-2"></path><path d="m16 20-2-2"></path><path d="M7.5 11l2.5-2.7 2 2 3-3.4"></path></svg></div><div class="usp-lbl">Dự án</div><div class="usp-num count-up" data-sep="." data-target="32926">32.926</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="8.5" cy="10" r="2"></circle><path d="M5.2 16a3.3 3.3 0 0 1 6.6 0"></path><path d="M15 9h4"></path><path d="M15 13h4"></path></svg></div><div class="usp-lbl">Khách hàng (CRM)</div><div class="usp-num count-up" data-sep="." data-target="982332">982.332</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="4" rx="1" width="8" x="8" y="2.5"></rect><path d="M16 4.5h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2h2"></path><path d="m8.5 13.5 2 2 4-4"></path></svg></div><div class="usp-lbl">Hợp đồng (CRM)</div><div class="usp-num count-up" data-sep="." data-target="64314">64.314</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M18.5 8V6.2A2.2 2.2 0 0 0 16.3 4H5.5a2.5 2.5 0 0 0 0 5h12.7a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5.5A2.5 2.5 0 0 1 3 21.5V6.5"></path><circle cx="16.5" cy="14" r="1.1"></circle></svg></div><div class="usp-lbl">Tài sản</div><div class="usp-num count-up" data-sep="." data-target="71111">71.111</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"></path><path d="m3 8 9 5 9-5"></path><path d="M12 13v8"></path><path d="m7.5 5.5 9 5"></path></svg></div><div class="usp-lbl">Đơn hàng</div><div class="usp-num count-up" data-sep="." data-target="294810">294.810</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="19" rx="2" width="14" x="5" y="2.5"></rect><rect height="3.2" rx="0.6" width="8" x="8" y="5.5"></rect><circle cx="8.3" cy="13" r=".5"></circle><circle cx="12" cy="13" r=".5"></circle><circle cx="15.7" cy="13" r=".5"></circle><circle cx="8.3" cy="17.2" r=".5"></circle><circle cx="12" cy="17.2" r=".5"></circle><circle cx="15.7" cy="17.2" r=".5"></circle></svg></div><div class="usp-lbl">Báo giá</div><div class="usp-num count-up" data-sep="." data-target="21652">21.652</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><rect height="12" rx="2.5" width="19" x="2.5" y="6"></rect><circle cx="12" cy="12" r="2.6"></circle><path d="M5.5 9.5h.01"></path><path d="M18.5 14.5h.01"></path></svg></div><div class="usp-lbl">Bảng lương</div><div class="usp-num count-up" data-sep="." data-target="15780">15.780</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><path d="M4 8.5V6a2 2 0 0 1 2-2h2.5"></path><path d="M15.5 4H18a2 2 0 0 1 2 2v2.5"></path><path d="M20 15.5V18a2 2 0 0 1-2 2h-2.5"></path><path d="M8.5 20H6a2 2 0 0 1-2-2v-2.5"></path><path d="M9 13.2c0-1.9 1.3-3.2 3-3.2s3 1.3 3 3.2"></path><path d="M12 13v1.6"></path><path d="M9.6 15.4c.4.7 1.4 1.2 2.4 1.2s2-.5 2.4-1.2"></path></svg></div><div class="usp-lbl">Chấm công</div><div class="usp-num count-up" data-sep="." data-target="1319081">1.319.081</div></div>
+<div class="usp-item"><div class="usp-ico"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 12.5v-.5a3.5 3.5 0 0 1 7 0v3"></path><path d="M12 12v4.5"></path><path d="M9.2 14.8c.1 1 .6 1.9 1.3 2.4"></path><path d="M14.8 14.8c-.1 1-.6 1.9-1.3 2.4"></path></svg></div><div class="usp-lbl">Chốt vân tay</div><div class="usp-num count-up" data-sep="." data-target="33669375">33.669.375</div></div>
+</div>
+<div aria-label="Logo khách hàng tiêu biểu" class="v3-logo-ticker fi">
+<div class="v3-logo-track">
+<img alt="haidilao-.png" src="assets/images/image_19.png"/>
+<img alt="bao-hiem-Tasco-Insurance.png" src="assets/images/image_20.png"/>
+<img alt="logo-bo-to-quan-m-c.png" src="assets/images/image_21.png"/>
+<img alt="PetroVietnam_Logo.png" src="assets/images/image_22.png"/>
+<img alt="vnpay-logo-vinadesign-25-12-57-55.png" src="assets/images/image_23.png"/>
+<img alt="EQuest_Logo.png" src="assets/images/image_24.png"/>
+<img alt="Logo-Yody.png" src="assets/images/image_25.png"/>
+<img alt="Logo-Ahamove-Transparent.png" src="assets/images/image_26.png"/>
+<img alt="dam_phu_my-logo_brandlogos.net_0pa7a-scaled.png" src="assets/images/image_27.png"/>
+<img alt="DTG_logo_600x600.png" src="assets/images/image_28.png"/>
+<img alt="haidilao-.png" src="assets/images/image_19.png"/>
+<img alt="bao-hiem-Tasco-Insurance.png" src="assets/images/image_20.png"/>
+<img alt="logo-bo-to-quan-m-c.png" src="assets/images/image_21.png"/>
+<img alt="PetroVietnam_Logo.png" src="assets/images/image_22.png"/>
+<img alt="vnpay-logo-vinadesign-25-12-57-55.png" src="assets/images/image_23.png"/>
+<img alt="EQuest_Logo.png" src="assets/images/image_24.png"/>
+<img alt="Logo-Yody.png" src="assets/images/image_25.png"/>
+<img alt="Logo-Ahamove-Transparent.png" src="assets/images/image_26.png"/>
+<img alt="dam_phu_my-logo_brandlogos.net_0pa7a-scaled.png" src="assets/images/image_27.png"/>
+<img alt="DTG_logo_600x600.png" src="assets/images/image_28.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ONBOARDING -->
+<section id="faq"><div class="container"><div class="tc fi"><div class="tag">FAQ</div><h2 class="h2">Câu hỏi thường gặp</h2></div><div class="faq-g"><div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">1Office có thay thế phần mềm kế toán không?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Không. 1Office là nền tảng quản trị vận hành - quản lý dự án, con người, quy trình và kinh doanh. Doanh nghiệp có thể dùng song song với phần mềm kế toán/ERP (hoạch định nguồn lực doanh nghiệp) hiện có thông qua API mở theo nhu cầu triển khai.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Đang dùng Jira, Lark, Slack thì có cần bỏ hết khi dùng 1Office không?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">1Office bổ sung phần Jira/Lark không có: Lương &amp; KPI tự động, Workload management, CRM và Dashboard CEO. Kết nối qua API mở.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Thời gian triển khai phụ thuộc vào những yếu tố nào?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Thời gian và phạm vi triển khai được tư vấn theo quy mô doanh nghiệp, phân hệ sử dụng và mức độ dữ liệu cần chuyển đổi.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Có tích hợp phần mềm kế toán và ký số không?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Có. 1Office hỗ trợ API mở để kết nối phần mềm kế toán/ERP và các hệ thống khác theo nhu cầu triển khai. Ký số và tích hợp cụ thể sẽ được tư vấn theo cấu hình thực tế của doanh nghiệp.</div></div></div><div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Dữ liệu có an toàn không? Đặt ở đâu?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Dữ liệu được quản lý theo cơ chế phân quyền, sao lưu và kiểm soát truy cập theo cấu hình hệ thống. Các yêu cầu bảo mật/chứng chỉ cụ thể sẽ được tư vấn theo hồ sơ triển khai.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Giá như thế nào? Có bản dùng thử không?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Tính theo phân hệ × người dùng × thời hạn. Có dùng thử trước khi ký. Dùng nhiều người / dài hạn = đơn giá giảm.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Doanh nghiệp Thương mại / Dịch vụ B2B nên bắt đầu từ phân hệ nào trước?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">Muốn kiểm soát tiến độ → bắt đầu từ 1Work. Kinh doanh kém hiệu quả → 1CRM. Lương hay sai → 1HRM. Chuyên gia 1Office sẽ tư vấn roadmap cụ thể ngay trong buổi Demo 1:1.</div></div><div class="faq-it"><button class="faq-q" onclick="tgFaq(this)">Nếu không hài lòng thì sao?<svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="faq-a">1Office hỗ trợ xuất dữ liệu theo chính sách và phạm vi triển khai. Đội ngũ tư vấn sẽ làm rõ phương án bàn giao dữ liệu ngay trong giai đoạn demo/hợp đồng.</div></div></div></div></div></section><section id="ob" style="scroll-margin-top:80px">
+<div class="container">
+<div class="tc fi">
+<div class="tag">Lộ trình triển khai</div>
+<h2 class="h2">Từ đăng ký Demo đến vận hành thật - <span class="hi">triển khai nhanh chóng</span></h2>
+<p class="sub" style="margin:0 auto">Chuyên gia 1Office đồng hành từng bước với cam kết mốc triển khai rõ ràng theo quy mô doanh nghiệp.</p>
+</div>
+<div class="v3-ob-wrap fi">
+<div class="v3-ob-grid">
+<div class="v3-ob-step"><div class="v3-ob-circle">01</div><h3>Tư vấn</h3><p>Chuyên gia lắng nghe bài toán và tư vấn thẳng thắn mức độ phù hợp.</p></div>
+<div class="v3-ob-step"><div class="v3-ob-circle">02</div><h3>Dùng thử</h3><p>Trải nghiệm các phân hệ phù hợp với bài toán thực tế của doanh nghiệp.</p></div>
+<div class="v3-ob-step"><div class="v3-ob-circle">03</div><h3>Ký hợp đồng</h3><p>Ký điện tử ngay trên 1Office - kích hoạt tức thì.</p></div>
+<div class="v3-ob-step"><div class="v3-ob-circle">04</div><h3>Triển khai</h3><p>Đồng hành nhập dữ liệu, đào tạo đội ngũ, chạy song song.</p></div>
+<div class="v3-ob-step act"><div class="v3-ob-circle">05</div><h3>Go live ⭐</h3><p>Chuyển sang vận hành thật trên quy trình đã cấu hình.</p></div>
+<div class="v3-ob-step"><div class="v3-ob-circle">06</div><h3>Chăm sóc khách hàng (CSKH) dài hạn</h3><p>Hotline, Chat &amp; Ticket - đồng hành không giới hạn.</p></div>
+</div>
+</div>
+<div class="fi" style="text-align:center;margin-top:28px"><a class="btn-p" href="javascript:void(0)" onclick="openDemo()">Đặt lịch Demo 1:1 miễn phí →</a></div>
+</div>
+</section>
+<!-- FAQ -->
+<!-- CTA + FORM -->
+<section id="cta">
+<div class="cta-g">
+<div class="fi"><div class="tag">Đăng ký Demo miễn phí</div><h2 class="h2">Xem cách 1Office giải quyết <span class="hi">bài toán của bạn</span> trong 45 phút</h2><p class="sub">Demo 1:1 với chuyên gia. Bạn sẽ được phân tích bài toán, gợi ý lộ trình triển khai, phân hệ phù hợp và báo giá cụ thể.</p><div class="cta-bens"><div class="cta-ben"><div class="cta-ben-ck">✓</div><span>Demo 1:1 với chuyên gia ngành trong 45 phút</span></div><div class="cta-ben"><div class="cta-ben-ck">✓</div><span>Đánh giá thẳng thắn mức độ phù hợp với bài toán hiện tại của doanh nghiệp</span></div><div class="cta-ben"><div class="cta-ben-ck">✓</div><span>Nhận roadmap triển khai theo quy mô và mức độ phức tạp thực tế</span></div><div class="cta-ben"><div class="cta-ben-ck">✓</div><span>Miễn phí - không cần thẻ, không ràng buộc cam kết</span></div></div><div class="cta-stats"><div class="cta-stat"><div class="cta-stat-v count-up" data-suffix="'" data-target="45">0</div><div class="cta-stat-l">Thời lượng demo</div></div><div class="cta-stat"><div class="cta-stat-v count-up" data-suffix="h" data-target="24">0</div><div class="cta-stat-l">Phản hồi sau đăng ký</div></div><div class="cta-stat"><div class="cta-stat-v count-up" data-suffix="%" data-target="100">0</div><div class="cta-stat-l">Miễn phí</div></div></div></div>
+<div class="fi" style="animation-delay:.15s">
+<div class="form-card" style="color-scheme:light">
+<div class="form-t">Đăng ký Demo 1:1 miễn phí</div>
+<div class="form-s">Tư vấn theo bài toán quản trị thực tế · Phù hợp với doanh nghiệp trên 50 nhân sự</div>
+<form autocomplete="off" id="df" novalidate="" style="color-scheme:light;background:transparent">
+<div class="form-row">
+<div class="fg" id="fg-company"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Tên công ty *</label><input id="f-company" placeholder="Công ty TNHH..." type="text"/><div class="em">Vui lòng nhập tên công ty</div></div>
+<div class="fg" id="fg-name"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Họ và tên *</label><input id="f-name" placeholder="Nguyễn Văn A" type="text"/><div class="em">Vui lòng nhập họ tên</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="fg-email"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Email *</label><input id="f-email" placeholder="ten@congty.com" type="email"/><div class="em">Email không hợp lệ</div></div>
+<div class="fg" id="fg-phone"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Số điện thoại *</label><input id="f-phone" placeholder="09xx xxx xxx" type="tel"/><div class="em">Số điện thoại không hợp lệ</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="fg-title"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Chức vụ *</label>
+<select id="f-title"><option value="">-- Chọn chức vụ --</option><option>Lãnh đạo (Chủ tịch, CEO, Giám đốc cấp cao)</option><option>Quản lý nhân sự</option><option>Quản lý cấp trung / Ops</option><option>Quản lý CNTT (công nghệ thông tin)</option><option>Nhân viên</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn chức vụ</div></div>
+<div class="fg" id="fg-region"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Khu vực *</label>
+<select id="f-region"><option value="">-- Chọn khu vực --</option><option>Hà Nội</option><option>Hồ Chí Minh</option><option>Khu vực phía Bắc (tính đến Huế)</option><option>Khu vực phía Nam (tính từ Đà Nẵng)</option></select>
+<div class="em">Vui lòng chọn khu vực</div></div>
+</div>
+<div class="form-row"><div class="fg" id="fg-size"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Quy mô nhân sự *</label>
+<select id="f-size"><option value="">-- Chọn quy mô --</option><option>Dưới 20 nhân viên</option><option>20 - 50 nhân viên</option><option>50 - 100 nhân viên</option><option>100 - 300 nhân viên</option><option>300 - 500 nhân viên</option><option>500 - 1000 nhân viên</option><option>Trên 1000 nhân viên</option></select>
+<div class="em">Vui lòng chọn quy mô</div></div><div class="fg" id="fg-industry"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Ngành hoạt động *</label>
+<select id="f-industry"><option value="">-- Chọn ngành --</option><option>Thương mại / Dịch vụ B2B</option><option>Thiết kế / Thi công</option><option>Chuỗi (F&amp;B / Bán lẻ)</option><option>Sản xuất / Nhà máy</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn ngành</div></div></div>
+<div class="fg" id="fg-problem"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Bài toán đang gặp phải *</label> <select id="f-problem"><option value="">-- Chọn bài toán --</option><option>Chấm công lương, quản lý nhân sự và đơn từ thủ công</option><option>Giao việc phân tán, khó theo dõi tiến độ và kiểm soát công việc/dự án</option><option>Thiếu hệ thống báo cáo và đánh giá công việc hiệu quả</option><option>Quy trình nội bộ và phê duyệt thủ công, chưa được số hóa</option><option>Quản lý chu trình bán hàng và khách hàng rời rạc</option><option>Khác</option></select> <div class="em">Vui lòng chọn bài toán</div></div>
+<button class="form-sub-btn" type="submit">Đăng ký Demo miễn phí ngay</button>
+</form>
+<div class="form-ok" id="form-ok">
+<div class="form-ok-ic">🎉</div>
+<div class="form-ok-t">Đăng ký thành công!</div>
+<div class="form-ok-d">Chuyên gia 1Office sẽ liên hệ với bạn trong vòng <strong>24 giờ làm việc</strong> để sắp xếp buổi Demo 1:1.<br/><br/>Trong thời gian chờ, bạn có thể gọi trực tiếp: <a href="tel:0834838888" style="color:var(--orange);font-weight:700">083 483 8888</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="foot-inner">
+<div class="foot-left">
+<div class="foot-brand"><img alt="1Office" height="60" src="assets/images/image_29.png" width="190"/></div><div class="foot-desc">Nền tảng quản lý tổng thể doanh nghiệp.</div>
+</div>
+<div class="foot-right">
+<div class="foot-info-row">
+<span class="foot-info-label">Trụ sở chính:</span>
+<span>Tầng 3, Tòa G2 Five Star Garden, số 02 Kim Giang, Phường Khương Đình, TP Hà Nội</span>
+</div>
+<div class="foot-info-row">
+<span class="foot-info-label">Chi nhánh HCM:</span>
+<span>Lầu 3, số 222 Hoàng Hoa Thám, Phường Bảy Hiền, TP HCM</span>
+</div>
+<div class="foot-info-row">
+<span class="foot-info-label">Hotline:</span>
+<span><a href="tel:0834838888">083 483 8888</a></span>
+</div>
+<div class="foot-info-row">
+<span class="foot-info-label">Website:</span>
+<span><a href="https://1office.vn" target="_blank">https://1office.vn</a></span>
+</div>
+</div>
+</div>
+<div class="foot-social-wrap">
+<div class="foot-social-label">THEO DÕI CHÚNG TÔI</div>
+<div class="foot-social-icons">
+<a aria-label="Website" class="foot-soc-btn" href="https://1office.vn" rel="noopener" target="_blank">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+</a>
+<a aria-label="Facebook" class="foot-soc-btn" href="https://www.facebook.com/1office.vn" rel="noopener" target="_blank">
+<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+</a>
+<a aria-label="YouTube" class="foot-soc-btn" href="https://www.youtube.com/@1office_nhubantuongtuong" rel="noopener" target="_blank">
+<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"></path></svg>
+</a>
+<a aria-label="Zalo" class="foot-soc-btn foot-soc-zalo" href="https://zalo.me/nentang1office" rel="noopener" target="_blank">Zalo</a>
+</div>
+</div>
+<div class="foot-copy">© 2026 1Office. All rights reserved.</div>
+</footer>
+<!-- FLOATING CONTACT DOCK -->
+<div class="fdock">
+<a aria-label="Gọi Hotline 083 483 8888" class="fbtn fbtn-call" href="tel:0834838888" title="Gọi: 083 483 8888"><svg fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+<a aria-label="Chat Messenger" class="fbtn fbtn-mess" href="https://www.facebook.com/messages/t/1670924943214356" rel="noopener" target="_blank" title="Nhắn tin Messenger">
+<svg fill="#fff" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.896 1.408 5.481 3.604 7.178v3.563l3.355-1.836c.896.246 1.844.38 2.821.38 5.523 0 10-4.145 10-9.285C22 6.145 17.523 2 12 2zm1.043 12.515l-2.55-2.715-4.982 2.715 5.477-5.81 2.615 2.715 4.916-2.715-5.476 5.81z"></path></svg>
+</a>
+</div>
+<!-- DEMO MODAL -->
+<div class="dlg-ov" id="dlgOv" onclick="if(event.target===this)closeDemo()">
+<div aria-label="Đăng ký Demo" aria-modal="true" class="dlg" role="dialog">
+<button aria-label="Đóng" class="dlg-x" onclick="closeDemo()">×</button>
+<div class="form-card" style="color-scheme:light"><div class="form-t">Đăng ký Demo 1:1 miễn phí</div><div class="form-s">Tư vấn theo bài toán quản trị thực tế · Phù hợp với doanh nghiệp trên 50 nhân sự</div><form autocomplete="off" id="mdf" novalidate="" style="color-scheme:light;background:transparent">
+<div class="form-row">
+<div class="fg" id="mfg-company"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Tên công ty *</label><input id="mf-company" placeholder="Công ty TNHH..." type="text"/><div class="em">Vui lòng nhập tên công ty</div></div>
+<div class="fg" id="mfg-name"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Họ và tên *</label><input id="mf-name" placeholder="Nguyễn Văn A" type="text"/><div class="em">Vui lòng nhập họ tên</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="mfg-email"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Email *</label><input id="mf-email" placeholder="ten@congty.com" type="email"/><div class="em">Email không hợp lệ</div></div>
+<div class="fg" id="mfg-phone"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Số điện thoại *</label><input id="mf-phone" placeholder="09xx xxx xxx" type="tel"/><div class="em">Số điện thoại không hợp lệ</div></div>
+</div>
+<div class="form-row">
+<div class="fg" id="mfg-title"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Chức vụ *</label>
+<select id="mf-title"><option value="">-- Chọn chức vụ --</option><option>Lãnh đạo (Chủ tịch, CEO, Giám đốc cấp cao)</option><option>Quản lý nhân sự</option><option>Quản lý cấp trung / Ops</option><option>Quản lý CNTT (công nghệ thông tin)</option><option>Nhân viên</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn chức vụ</div></div>
+<div class="fg" id="mfg-region"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Khu vực *</label>
+<select id="mf-region"><option value="">-- Chọn khu vực --</option><option>Hà Nội</option><option>Hồ Chí Minh</option><option>Khu vực phía Bắc (tính đến Huế)</option><option>Khu vực phía Nam (tính từ Đà Nẵng)</option></select>
+<div class="em">Vui lòng chọn khu vực</div></div>
+</div>
+<div class="form-row"><div class="fg" id="mfg-size"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Quy mô nhân sự *</label>
+<select id="mf-size"><option value="">-- Chọn quy mô --</option><option>Dưới 20 nhân viên</option><option>20 - 50 nhân viên</option><option>50 - 100 nhân viên</option><option>100 - 300 nhân viên</option><option>300 - 500 nhân viên</option><option>500 - 1000 nhân viên</option><option>Trên 1000 nhân viên</option></select>
+<div class="em">Vui lòng chọn quy mô</div></div><div class="fg" id="mfg-industry"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Ngành hoạt động *</label>
+<select id="mf-industry"><option value="">-- Chọn ngành --</option><option>Thương mại / Dịch vụ B2B</option><option>Thiết kế / Thi công</option><option>Chuỗi (F&amp;B / Bán lẻ)</option><option>Sản xuất / Nhà máy</option><option>Khác</option></select>
+<div class="em">Vui lòng chọn ngành</div></div></div>
+<div class="fg" id="mfg-problem"><label style="background:transparent!important;background-color:transparent!important;color:#1D232E!important">Bài toán đang gặp phải *</label> <select id="mf-problem"><option value="">-- Chọn bài toán --</option><option>Chấm công lương, quản lý nhân sự và đơn từ thủ công</option><option>Giao việc phân tán, khó theo dõi tiến độ và kiểm soát công việc/dự án</option><option>Thiếu hệ thống báo cáo và đánh giá công việc hiệu quả</option><option>Quy trình nội bộ và phê duyệt thủ công, chưa được số hóa</option><option>Quản lý chu trình bán hàng và khách hàng rời rạc</option><option>Khác</option></select> <div class="em">Vui lòng chọn bài toán</div></div>
+<button class="form-sub-btn" type="submit">Đăng ký Demo miễn phí ngay</button>
+</form><div class="form-ok" id="mform-ok">
+<div class="form-ok-ic">🎉</div>
+<div class="form-ok-t">Đăng ký thành công!</div>
+<div class="form-ok-d">Chuyên gia 1Office sẽ liên hệ với bạn trong vòng <strong>24 giờ làm việc</strong> để sắp xếp buổi Demo 1:1.<br/><br/>Trong thời gian chờ, bạn có thể gọi trực tiếp: <a href="tel:0834838888" style="color:var(--orange);font-weight:700">083 483 8888</a></div>
+</div></div>
+</div>
+</div>
+<button aria-label="Lên đầu trang" id="stt" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+<svg fill="none" height="20" stroke="#fff" stroke-linecap="round" stroke-width="2.5" viewbox="0 0 20 20" width="20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+</button>
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/script.js"></script></body></html>
