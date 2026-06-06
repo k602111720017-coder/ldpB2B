@@ -1,0 +1,322 @@
+// NAVBAR SCROLL
+window.addEventListener('scroll',()=>{const nav=document.getElementById('nav');if(nav)nav.classList.toggle('scrolled',scrollY>20);});
+
+// MOBILE MENU
+function tgMenu(){const mm=document.getElementById('mm');if(mm)mm.classList.toggle('open');}
+document.addEventListener('click',e=>{
+  const m=document.getElementById('mm');
+  if(m&&m.classList.contains('open')&&!m.contains(e.target)&&!e.target.closest('.hbg'))m.classList.remove('open');
+});
+
+// countdown removed
+
+// FADE-IN OBSERVER
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});
+},{threshold:0.08});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+
+// TABS
+function swTab(id,btn){
+  const tab=document.getElementById('tab-'+id);
+  if(!tab)return;
+  document.querySelectorAll('.tab-ct').forEach(t=>t.classList.remove('act'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('act'));
+  tab.classList.add('act');
+  if(btn)btn.classList.add('act');
+}
+
+// LIFECYCLE DATA
+const lcD=[
+  {n:'BƯỚC 01',t:'Quản lý Kinh doanh & Cơ hội',d:'Toàn bộ luồng cơ hội từ tiềm năng → sàng lọc → đề xuất → ký hợp đồng trên 1CRM. Cơ hội thắng tự động tạo dự án trong 1Work - không cần nhập tay lại thông tin.',f:['Luồng cơ hội theo giai đoạn','Ký số hợp đồng','Báo giá & phê duyệt','Lịch sử 360° khách hàng','Tự động tạo dự án']},
+  {n:'BƯỚC 02',t:'Khởi động & Thiết lập dự án',d:'Từ hợp đồng ký, 1Work tự tạo dự án với hạng mục bàn giao, cột mốc và tiến độ. Nhập danh sách công việc từ hợp đồng, phân công nhân sự đúng năng lực hiện có.',f:['Mẫu dự án theo ngành','Gantt/Sprint/Kanban','Giao việc theo năng lực','Cột mốc & tiến độ','Tài liệu & yêu cầu']},
+  {n:'BƯỚC 03',t:'Giao việc & Thực thi',d:'Giao việc theo khối lượng công việc thực tế, ghi chấm giờ theo giờ. Mọi hoạt động đều được ghi nhận tự động vào chi phí dự án - không cần tổng hợp thủ công.',f:['Việc với hạn & độ ưu tiên','Chấm giờ theo giờ thực','Giờ tạo doanh thu tự động','Việc con & danh sách kiểm','Tệp đính kèm']},
+  {n:'BƯỚC 04',t:'Khối lượng công việc & Tiến độ',d:'Quản lý dự án và CEO nhìn thấy toàn bộ khối lượng công việc của đội theo giờ thực. Cảnh báo quá tải và điểm nghẽn trước khi ảnh hưởng tiến độ dự án và chất lượng bàn giao.',f:['Khối lượng công việc theo từng người, tức thời','Cảnh báo quá tải chủ động','Theo dõi ngân sách theo Sprint','Gantt tổng thể','1AI giám sát tự động']},
+  {n:'BƯỚC 05',t:'Lãi lỗ & Chi phí Dự án',d:'CEO xem lãi/lỗ từng dự án ngay hôm nay: Doanh thu hợp đồng − Chi phí nhân công (từ chấm giờ) − Chi phí mua ngoài (từ đơn mua hàng) = Biên lợi nhuận thực.',f:['Lãi lỗ tức thời theo dự án','Chi phí nhân công từ chấm giờ','Chi phí ngoài từ đơn mua hàng','Lập hóa đơn theo cột mốc tự động','Cảnh báo vượt ngân sách']},
+  {n:'BƯỚC 06',t:'KPI & Tính lương tự động',d:'Chấm công + KPI dự án + hoa hồng kinh doanh → tính lương 1 lần bấm duyệt. Không còn 5 ngày tổng hợp thủ công, không còn khiếu nại sai lương mỗi tháng.',f:['KPI & OKR liên thông lương','Chấm công đa hình thức','Thuế TNCN & BHXH VN','Hoa hồng kinh doanh tự động','Duyệt lương 1 lần bấm']},
+  {n:'BƯỚC 07',t:'Bảng điều hành CEO tức thời',d:'Mọi dữ liệu hội tụ về 1 bảng điều hành: Lãi lỗ tổng & theo dự án, luồng cơ hội doanh thu, khối lượng công việc của đội, KPI - CEO có toàn cảnh để ra quyết định ngay hôm nay.',f:['Lãi lỗ tổng & theo dự án','Dự báo doanh thu','Khối lượng & năng lực','KPI đội & cá nhân','Bản tóm tắt 1AI Dashboard']}
+];
+function setLC(idx,el){
+  const num=document.getElementById('lc-num');
+  const ttl=document.getElementById('lc-ttl');
+  const desc=document.getElementById('lc-d');
+  const tags=document.getElementById('lc-tags');
+  const d=lcD[idx];
+  if(!d||!num||!ttl||!desc||!tags)return;
+  document.querySelectorAll('.lc-stp').forEach((s,i)=>s.classList.toggle('act',i===idx));
+  num.textContent=d.n;
+  ttl.textContent=d.t;
+  desc.textContent=d.d;
+  tags.innerHTML=d.f.map(f=>`<div class="lc-tag">${f}</div>`).join('');
+}
+
+// FAQ ACCORDION
+function tgFaq(btn){
+  const it=btn.parentElement,isOpen=it.classList.contains('open');
+  document.querySelectorAll('.faq-it').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)it.classList.add('open');
+}
+
+// FORM VALIDATION
+(function(){
+  const df=document.getElementById('df');
+  if(!df)return;
+  df.addEventListener('submit',function(e){
+    e.preventDefault();
+    const rules=[
+      ['fg-company','f-company','text'],
+      ['fg-name','f-name','text'],
+      ['fg-title','f-title','sel'],
+      ['fg-email','f-email','email'],
+      ['fg-phone','f-phone','phone'],
+      ['fg-region','f-region','sel'],
+      ['fg-size','f-size','sel'],
+      ['fg-industry','f-industry','sel'],
+      ['fg-problem','f-problem','sel'],
+    ];
+    let ok=true;
+    rules.forEach(([g,f,t])=>{
+      const fg=document.getElementById(g),el=document.getElementById(f);
+      if(!fg||!el)return;
+      let v=true;
+      if(t==='text')v=el.value.trim().length>1;
+      else if(t==='sel')v=el.value!=='';
+      else if(t==='phone')v=/^[0-9]{9,11}$/.test(el.value.replace(/\s/g,''));
+      else if(t==='email')v=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+      else if(t==='check')v=fg.querySelectorAll('input[type=checkbox]:checked').length>0;
+      fg.classList.toggle('err',!v);
+      if(!v)ok=false;
+    });
+    if(ok){
+      df.style.display='none';
+      const s=document.getElementById('form-ok');
+      if(s){s.style.display='block';s.scrollIntoView({behavior:'smooth',block:'center'});}
+    }
+  });
+})();
+
+// SMOOTH SCROLL with navbar offset
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const tgt=document.querySelector(this.getAttribute('href'));
+    if(tgt){
+      e.preventDefault();
+      const nav=document.getElementById('nav');
+      const offset=(nav?nav.offsetHeight:68)+8;
+      window.scrollTo({top:tgt.getBoundingClientRect().top+scrollY-offset,behavior:'smooth'});
+    }
+  });
+});
+
+// ── SCROLL TO TOP ──
+(function(){
+  var btn=document.getElementById('stt');
+  if(!btn)return;
+  window.addEventListener('scroll',function(){btn.classList.toggle('vis',scrollY>300);},{ passive:true });
+})();
+
+// ── RIPPLE EFFECT (brand guidelines §5) ──
+document.addEventListener('click',function(e){
+  var btn=e.target.closest('.btn-p,.form-sub-btn');
+  if(!btn)return;
+  var r=btn.getBoundingClientRect();
+  var x=e.clientX-r.left, y=e.clientY-r.top;
+  var sz=Math.max(r.width,r.height);
+  ['ripple-fill','ripple-ring'].forEach(function(cls){
+    var el=document.createElement('span');
+    el.className=cls;
+    el.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(x-sz/2)+'px;top:'+(y-sz/2)+'px';
+    btn.appendChild(el);
+    el.addEventListener('animationend',function(){el.remove();});
+  });
+});
+
+// ── COUNT-UP ──
+function countUp(el){
+  var target=parseFloat(el.dataset.target);
+  var suffix=el.dataset.suffix||'';
+  var dec=el.dataset.decimals?parseInt(el.dataset.decimals):0;
+  var sep=el.dataset.sep||'';
+  var dur=2000,start=performance.now();
+  function fmt(n){
+    var s=n.toFixed(dec);
+    if(sep){var parts=s.split('.');parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,sep);s=parts.join('.');}
+    return s+suffix;
+  }
+  function upd(now){
+    var p=Math.min((now-start)/dur,1);
+    var ease=1-(1-p)*(1-p);
+    el.textContent=fmt(target*ease);
+    if(p<1)requestAnimationFrame(upd);
+    else el.textContent=fmt(target);
+  }
+  requestAnimationFrame(upd);
+}
+(function(){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){countUp(e.target);obs.unobserve(e.target);}
+    });
+  },{threshold:0.3});
+  document.querySelectorAll('.count-up').forEach(function(el){obs.observe(el);});
+})();
+
+// ── SCROLLSPY - active nav link ──
+(function(){
+  var secs=['pain','flow','solution','ai','roles','faq'];
+  var links={};
+  secs.forEach(function(id){
+    var a=document.querySelector('.nav-links a[href="#'+id+'"]');
+    if(a)links[id]=a;
+  });
+  var obs2=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var id=e.target.id;
+      if(links[id])links[id].classList.toggle('nav-on',e.isIntersecting);
+    });
+  },{threshold:0.25,rootMargin:'-68px 0px 0px 0px'});
+  secs.forEach(function(id){
+    var sec=document.getElementById(id);
+    if(sec)obs2.observe(sec);
+  });
+})();
+
+// ── INLINE FORM VALIDATION (blur per field) ──
+(function(){
+  var rules={
+    'f-name':function(v){return v.trim().length>1;},
+    'f-title':function(v){return v!=='';},
+    'f-phone':function(v){return /^[0-9]{9,11}$/.test(v.replace(/\s/g,''));},
+    'f-email':function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());},
+    'f-company':function(v){return v.trim().length>1;},
+    'f-size':function(v){return v!=='';},'f-industry':function(v){return v!=='';},
+    'f-problem':function(v){return v!=='';}
+  };
+  var map={'f-name':'fg-name','f-title':'fg-title','f-phone':'fg-phone','f-email':'fg-email',
+           'f-company':'fg-company','f-size':'fg-size','f-industry':'fg-industry','f-problem':'fg-problem'};
+  Object.keys(rules).forEach(function(fid){
+    var el=document.getElementById(fid);
+    if(!el)return;
+    el.addEventListener('blur',function(){
+      var fg=document.getElementById(map[fid]);
+      if(fg)fg.classList.toggle('err',!rules[fid](el.value));
+    });
+    el.addEventListener('input',function(){
+      var fg=document.getElementById(map[fid]);
+      if(fg&&fg.classList.contains('err'))fg.classList.toggle('err',!rules[fid](el.value));
+    });
+  });
+})();
+
+// ── HERO FLOW ANIMATION ──
+(function(){
+  var steps=[0,1,2,3,4];
+  var cur=2;
+  function activate(i){
+    steps.forEach(function(s){
+      var el=document.getElementById('hfs'+s);
+      if(!el)return;
+      el.classList.remove('hf-active','hf-step-dim');
+      if(s<i){}
+      else if(s===i){el.classList.add('hf-active');}
+      else{el.classList.add('hf-step-dim');}
+      // update badge
+      var badge=el.querySelector('.hf-step-badge');
+      if(badge){
+        badge.className='hf-step-badge';
+        if(s<i){badge.className+=' badge-done';badge.textContent='Xong';}
+        else if(s===i){badge.className+=' badge-active';badge.textContent='Đang chạy';}
+        else{badge.className+=' badge-wait';badge.textContent='Chờ';}
+      }
+    });
+  }
+  function next(){cur=(cur+1)%5;activate(cur);}
+  activate(cur);
+  setInterval(next,2800);
+})();
+
+// ── HERO BADGE INDUSTRY SWITCHER ──
+function switchBadge(idx,el){
+  document.querySelectorAll('.hb-ind').forEach(function(b){b.classList.remove('active');});
+  el.classList.add('active');
+}
+
+
+
+// ---- next original <script> block ----
+
+
+// ===== DEMO MODAL =====
+function openDemo(){const dlg=document.getElementById('dlgOv');if(dlg){dlg.classList.add('open');document.body.classList.add('dlg-open');}}
+function closeDemo(){const dlg=document.getElementById('dlgOv');if(dlg){dlg.classList.remove('open');document.body.classList.remove('dlg-open');}}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDemo();});
+// modal form validation
+(function(){var mf=document.getElementById('mdf');if(!mf)return;
+ mf.addEventListener('submit',function(e){e.preventDefault();
+  var rules=[['mfg-company','mf-company','text'],['mfg-name','mf-name','text'],['mfg-title','mf-title','sel'],['mfg-email','mf-email','email'],['mfg-phone','mf-phone','phone'],['mfg-region','mf-region','sel'],['mfg-size','mf-size','sel'],['mfg-industry','mf-industry','sel'],['mfg-problem','mf-problem','sel']];
+  var ok=true;
+  rules.forEach(function(r){var fg=document.getElementById(r[0]),el=document.getElementById(r[1]),t=r[2],v=true;
+   if(!fg||!el)return;
+   if(t==='text')v=el.value.trim().length>1;
+   else if(t==='sel')v=el.value!=='';
+   else if(t==='phone')v=/^[0-9]{9,11}$/.test(el.value.replace(/\s/g,''));
+   else if(t==='email')v=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+   else if(t==='check')v=fg.querySelectorAll('input[type=checkbox]:checked').length>0;
+   fg.classList.toggle('err',!v);if(!v)ok=false;});
+  if(ok){mf.style.display='none';document.getElementById('mform-ok').style.display='block';}
+ });})();
+
+
+
+
+// ---- next original <script> block ----
+
+
+(function(){
+  function ready(fn){
+    if(document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+  ready(function(){
+    if(!document.getElementById('imgLightbox')){
+      var lb = document.createElement('div');
+      lb.id = 'imgLightbox';
+      lb.className = 'img-lightbox';
+      lb.innerHTML = '<div class="img-lightbox-card" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to"><div class="img-lightbox-head"><div><div class="img-lightbox-title">Xem ảnh chi tiết</div><div class="img-lightbox-sub">Ảnh được mở ở kích thước lớn hơn để xem rõ nội dung</div></div><button type="button" class="img-lightbox-close" aria-label="Đóng">×</button></div><div class="img-lightbox-img-wrap"><img alt="Ảnh phóng to"></div><div class="img-lightbox-caption"></div></div>';
+      document.body.appendChild(lb);
+    }
+    var lb = document.getElementById('imgLightbox');
+    var img = lb.querySelector('img');
+    var cap = lb.querySelector('.img-lightbox-caption');
+    var close = lb.querySelector('.img-lightbox-close');
+    var wrap = lb.querySelector('.img-lightbox-img-wrap');
+    function openLightbox(source){
+      var full = source.getAttribute('data-full') || source.currentSrc || source.src;
+      img.src = full;
+      img.alt = source.alt || 'Ảnh phóng to';
+      cap.textContent = (source.alt || 'Ảnh chi tiết') + ' · Bấm ra ngoài hoặc nhấn ESC để đóng';
+      wrap.scrollTop = 0;
+      wrap.scrollLeft = 0;
+      lb.classList.add('open');
+      document.body.classList.add('img-lightbox-open');
+    }
+    function closeLightbox(){
+      lb.classList.remove('open');
+      document.body.classList.remove('img-lightbox-open');
+      setTimeout(function(){ if(!lb.classList.contains('open')) img.removeAttribute('src'); }, 120);
+    }
+    document.querySelectorAll('.v3-flow-thumb img, .v3-sol-thumb img, .v3-ai-media img, #flow img, #solution img, #ai img').forEach(function(el){
+      if(el.dataset.lbBound === '1') return;
+      el.dataset.lbBound = '1';
+      el.setAttribute('title', 'Click để phóng to ảnh');
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        openLightbox(el);
+      });
+    });
+    close.addEventListener('click', closeLightbox);
+    lb.addEventListener('click', function(e){ if(e.target === lb) closeLightbox(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lb.classList.contains('open')) closeLightbox(); });
+  });
+})();
